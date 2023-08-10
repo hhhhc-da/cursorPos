@@ -3,6 +3,10 @@ platform: debian on arm(OringePi5)
 
 Qt5 to compile getCursor.
 
+Before bash any file you need "sudo -s".
+
+./moveFile.sh
+
 ./build & ./taskID.sh  //click to the window
 
 cat wintask  // get task ID: 0x0x3200003 (example)
