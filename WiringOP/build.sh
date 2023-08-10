@@ -1,0 +1,1 @@
+g++ testWiringOP.cpp -o maimaiTest -std=c++17 -lwiringPi -lX11
