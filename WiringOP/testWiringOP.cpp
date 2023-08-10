@@ -37,7 +37,7 @@ void click(int x, int y);
 void raiseID(size_t id);
 
 // int main(int argc, char *argv[])
-int main()
+int main(int argc, char *argv[])
 {
     // now time
     auto timeBegin = chrono::steady_clock::now();
@@ -64,7 +64,13 @@ int main()
     clickPosInit();
     cout << "read position file OK" << endl;
 
-    raiseID(0x3200003);
+    // raiseID(0x3200003);
+    istringstream iss(argv[1]);
+    int taskID;
+    iss >> std::hex >> std::showbase >> taskID;
+
+    cout << "taskID: " << std::hex << taskID << endl;
+    raiseID(taskID);
     cout << "raise task." << endl;
 
     // read pins loop function
