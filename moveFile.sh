@@ -1,1 +1,1 @@
-cp pos.json ../../C++/TestWiringOP
+cp pos.json TestWiringOP
